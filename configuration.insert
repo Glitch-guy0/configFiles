@@ -1,0 +1,35 @@
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Change the default prompt format
+format = """\
+$battery
+$os $env_var\
+ $all\
+$character"""
+
+[battery]
+format = '[$percentage]($style)'
+
+
+[character]
+success_symbol = '[❱](bold green)'
+error_symbol = '[❱](bright-cyan)'
+
+[localip]
+ssh_only = false
+format = '@[$localipv4](bold green) '
+disabled = false
+
+[python]
+symbol=" "
+style='#33ff33'
+
+[os]
+disabled=false
+style='#00ff99'
+
+[os.symbols]
+Windows=""
+Ubuntu = ""
+
