@@ -5,7 +5,7 @@ add_newline = true
 format = """\
 $battery
 $os $env_var\
- $all\
+$all
 $character"""
 
 [battery]
